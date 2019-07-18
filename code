@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<!-- Makeup product page? -->
+
+<head>
+
+        <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display|Nanum+Myeongjo|Sail&display=swap" rel="stylesheet">
+        
+        <!--font-family: 'DM Serif Display', serif;
+        font-family: 'Nanum Myeongjo', serif;
+        font-family: 'Rock Salt', cursive;
+        font-family: 'Permanent Marker', cursive; -->
+
+
+<style>
+
+    html {
+        background-color: rgba(240, 231, 231, 0.377);
+    }
+
+    img {
+        margin: 10px;
+        height: 280px;
+    }
+
+    .video {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    h1 {
+        font-family: 'Sail', cursive;
+        font-size: 80px;
+    }
+
+    h2 {
+        font-family: 'Sail', cursive;
+    }
+
+    h3 {
+        font-family: 'Sail', cursive;
+        font-size: 25px;
+    }
+
+    p {
+        font-family: 'DM Serif Display', serif; 
+    }
+
+    ul {
+        font-family: 'DM Serif Display', serif;
+        
+    }
+
+    button {
+        background-color: lightskyblue;
+        font-family: 'DM Serif Display', serif;
+    }
+
+    button:hover {
+        background-color: cornflowerblue;
+    }
+    
+    @media (max-width: 400px){
+        p {
+            font-size: 10px
+        }
+
+    }
+
+    #nav-bar {
+         position: fixed; 
+         top: 0px;
+         right:0px;
+         font-family: 'DM Serif Display', serif;
+         font-size: 20px;
+         background-color: rgba(240, 231, 231, 0.61);
+         
+    }
+
+    .headercontainer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .border {
+        border-color: navy;
+        border-width: 5px;
+        border-style: solid;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    
+    .flexcontainer {
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row wrap;
+    }
+   
+
+</style>
+
+
+</head>
+
+<header id="header" class="headercontainer">
+<img id="header-img" class="headeritem1" src="https://i.pinimg.com/474x/f7/3e/2f/f73e2f248da0dfa0a29f942e9ea8f23d.jpg">
+<h1 class="headeritem2">Cosmetics Co.</h1>
+<nav id="nav-bar" class="headeritem3">
+<a href="#about-header" class="nav-link">Our Story | </a> 
+<a href="#products-header" class="nav-link">Products | </a>
+<a href="#quality-header" class="nav-link">Our Quality |</a>
+<a href="#sign-up" class="nav-link">Sign Up</a>
+</nav>
+</header>
+
+<body>
+    <h2 id="about-header">Our Story</h2>
+        <p>In 19XX, good makeup was hard to find. Cosmetics Co. was founded as an equalizer, bringing professional quality cosmetics to the masses. Since that time, we have prided ourselves on our innovative products, and the quality of our ingredients. Whether you're battling humidity, high temperatures, or just water, you can create a look that is uniquely you and won't budge until you say so.</p>
+        
+
+    <h2 id="products-header">Products</h2>
+        <div class="flexcontainer">    
+            <fieldset>
+                <h3 id="face-header">Face</h3>
+                <p class="flexitem1">
+                    <ul>
+                        <li>Perfecting Primer</li>
+                        <li>Flawless Full Coverage Foundation</li>
+                        <li>Tinted Moisturizer + SPF</li>
+                        <li>Feather Light Powder Foundation</li>
+                        <li>Bulletproof Setting Spray</li>
+                    </ul>
+                </p>
+                <button>Shop Face</button>
+            </fieldset>
+            <fieldset>    
+                <h3 id="eyes-header">Eyes</h3>
+                <p>
+                    <ul>
+                        <li>Overtime Eyeshadow Primer</li>
+                        <li>24 Hour Eye Pigment</li>
+                        <li>Frosted Creme Eyeshadow</li>
+                        <li>Hard Rock Glitter Liner</li>
+                        <li>Tattoo Waterproof Eyeliner</li>
+                        <li>Fringe Benefits Mascara</li>
+                    </ul>
+                </p>
+                <button>Shop Eyes</button>
+            </fieldset>  
+            <fieldset>      
+                <h3 id="lips-header">Lips</h3>
+                <p>
+                    <ul>
+                        <li>Steadfast Lip Primer</li>
+                        <li>Lip Service Long Wear Lipstick</li>
+                        <li>Read Between The Lines Lip Liner</li>
+                        <li>Juiced Lip Gloss</li>
+                        <li>Rescue Lip Balm</li>
+                    </ul>
+                </p>
+                <button>Shop Lips</button>
+            </fieldset>    
+    </div>        
+    <h2 id="quality-header">Highest Quality</h2>
+        <p id="quality-blurb">Our products are made with only the finest ingredients, using state-of-the-art formulas and manufacturing techniques to ensure that you receive absolute perfection, every time.</p>
+        <iframe id="video" class="video" width="644" height="362" src="https://www.youtube.com/embed/dlykUSJJWcw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h2 id="signup-header">Cosmetics Co. Insider Program</h2>    
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <p id="sign-up">
+                Want to be notified of upcoming sales and product releases before anyone else? Sign up for our Insider program and earn rewards for every purchase!
+            </p>
+            <input id="email" name="email" type="email" placeholder="email" required>
+           <input type="submit" id="submit" class="button" value="I want in!">  
+        </form>    
+
+</body>
+
+<footer>
+
+<p id="footer">&copy; 2019 Cosmetics Co.</p>
+
+</footer>
+
+</html>
